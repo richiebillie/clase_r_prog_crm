@@ -1,8 +1,8 @@
 
 
 
-makeCacheMatrix <- function(x = matrix()) {
-        inv <- NULL
+makeCacheMatrix <- function(x = matrix()) { "DAMOS NOMBRE A LA FUNCION"
+        inv <- NULL 
         set <- function(y) {
                 x <<- y
                 inv <<- NULL
@@ -25,8 +25,9 @@ cacheSolve <- function(x, ...) {
         inv
 }
 
+"OBTENEMOS LOS RESULTADOS DE LA MATRIZ"
 
-x = rbind(c(3, -4), c(-8, 2))
+x = rbind(c(3, -4), c(-8, 2)) 
 m = makeCacheMatrix(x)
 m$get()
 
